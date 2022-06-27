@@ -1,12 +1,21 @@
 package rdexleetcodeKotlin
 
 fun main() {
+    testValidAnagram242() // Problem242
     testTopKFrequentElements347() // Problem 347
     testContainsDuplicate217() // problem 217
     testValidPalindrome()  // Problem 125
     testTwoSum() // Problem 001 test cases
 }
 
+
+fun testValidAnagram242() {
+    val testCase = ValidAnagram242()
+    val test1InputA = "anagram"
+    val test1InputB = "nagaram"
+
+    println("242 Valid Anagram: ${testCase.isAnagram(test1InputA, test1InputB)}")
+}
 
 fun testTopKFrequentElements347() {
     val testInputList = intArrayOf(1, 1, 1, 2, 2, 3)
